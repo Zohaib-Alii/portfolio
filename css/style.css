@@ -1,0 +1,313 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+/* .slides-navigation {
+  z-index: 6;
+} */
+.slides-navigation i {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 0 0.57em;
+  /* z-index: 6; */
+}
+
+.titleMassage {
+  position: absolute;
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  top: 50%;
+  z-index: 2;
+  text-align: center;
+  margin-top: -125px;
+  margin-left: 125px;
+}
+
+.titleMassage .heading p {
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+.titleMassage .heading .main {
+  font-size: 50px;
+}
+.titleMassage .heading .sub {
+  font-size: 23px;
+}
+.section {
+  padding: 100px 0;
+}
+.aboutImage {
+  max-width: 100%;
+  /* height: 500px; */
+}
+.skillsSection,
+.contactSection {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.skill {
+  text-align: center;
+  margin-left: 10px;
+  /* font-weight: 400; */
+}
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chart .percent {
+  color: #000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+.chart .percent::after {
+  content: "%";
+}
+.squareItem {
+  margin-top: 30px;
+  position: relative;
+}
+.squareInnerContainer {
+  position: relative;
+  padding: 50px 15px 35px;
+  text-align: center;
+  border: 2px solid #444;
+  border-top: none;
+}
+.squareInnerContainer::before,
+.squareInnerContainer::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 30%;
+  border-bottom: 2px solid #444;
+}
+.squareInnerContainer::before {
+  right: 0;
+}
+.squareInnerContainer::after {
+  left: 0;
+}
+.squareContent h2 {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #e74c3c;
+}
+.squareContent h3 {
+  font-size: 13px;
+  margin: 0;
+  font-weight: 600;
+}
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  /* left: 50%;  murshid code but still not working
+  top: -30px;  murshid*/
+  /* now mine 
+  top: 12px;*/
+  top: -30px;
+  /* left: 13px; */
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+  /* font-size: 0.7em; */
+
+  color: #444;
+}
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: #fff solid 1px;
+  border-radius: 2px;
+}
+.contactButton:hover {
+  text-decoration: none;
+  color: #e74c3c;
+  background-color: #fff;
+}
+.filter {
+  text-align: center;
+  width: 100%;
+}
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.filter a {
+  color: #bdc3c7;
+  border: 1px solid #bdc3c7;
+  padding: 10px 18px;
+  display: block;
+}
+.filter li {
+  display: inline-block;
+  padding: 5px;
+}
+.filter .current {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+}
+.itemsContainer {
+  width: 100%;
+}
+.items li {
+  display: inline-block;
+  padding: 5px;
+}
+.items li img {
+  width: 100%;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+}
+.items .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.items .icons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -20px auto 0 -47px;
+  text-align: center;
+  z-index: 3;
+}
+.items .icons i {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 9px;
+}
+.items a {
+  width: 40px;
+  height: 40px;
+  background-color: #e74c3c;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+}
+.items .imageOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear 0.1s;
+  -moz-transition: all 0.2s linear 0.1s;
+  -o-transition: all 0.2s linear 0.1s;
+  transition: all 0.2s linear 0.1s;
+}
+.items .item:hover .imageOverlay {
+  opacity: 1;
+}
+.items .openButton {
+  float: left;
+  left: -200px;
+}
+.items .projectLink {
+  float: right;
+  right: -200px;
+}
+.items .item:hover .openButton {
+  left: 0px;
+}
+.items .item:hover .projectLink {
+  right: 0px;
+}
+.items .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.items {
+  padding: 0;
+}
+.copyrightSection {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 5px;
+}
+.copyrightSection p {
+  margin: 0;
+}
+/* navigationnn */
+#navigation {
+  background-color: #e74c3c;
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+#navigation li {
+  padding: 0 10px;
+}
+#navigation .navbar-brand {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+#navigation li a {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+#navigation button {
+  color: #fff;
+  font-size: 2em;
+}
+/* .navbar-toggler-icon {
+  background: url(../images/hamburger-svg-responsive-menu-4.png);
+  background-size: 100%;
+} */
+/* fixed navigation */
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+/* loder */
+.loder {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+.loder .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../images/reloder.gif) center center no-repeat;
+}
